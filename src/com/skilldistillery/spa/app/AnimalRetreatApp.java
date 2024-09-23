@@ -1,5 +1,8 @@
 package com.skilldistillery.spa.app;
 
+import com.skilldistillery.spa.entities.AnimalRetreat;
+import com.skilldistillery.spa.entities.Bear;
+import com.skilldistillery.spa.entities.Lion;
 import com.skilldistillery.spa.entities.Tiger;
 
 public class AnimalRetreatApp {
@@ -14,9 +17,25 @@ public class AnimalRetreatApp {
 	}
 	
 	public void run() {
-		Tiger tiger = new Tiger("Willie");
+		AnimalRetreat retreat = new AnimalRetreat("Fred");
 		
-		System.out.println(tiger.getName());
+//		Tiger tiger = new Tiger("Willie");
+//		System.out.println(tiger.getName());
+//		
+//		Tiger tiger2 = new Tiger();
+//		System.out.println();
+		
+//		Lion lion = new Lion("Bryce"); 
+//		System.out.println(lion.getName());
+//		
+//		lion.makeNoise();
+//		
+		
+		Bear bear = new Bear("Terry"); 
+		System.out.println(bear.getName());
+		
+		bear.makeNoise();
 	}
+	
 
 }

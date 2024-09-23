@@ -1,20 +1,21 @@
 package com.skilldistillery.spa.entities;
 
-public class Tiger extends Animal {
-	private String noise = "Chuffffff";
+public class Bear extends Animal {
+	private String noise = "GRRRRRRR";
 
 	// methods
 
-	public Tiger() {
+	public Bear() {
+
 	}
 
-	public Tiger(String name) {
+	public Bear(String name) {
 		super(name);
 	}
-
-	public Tiger(String name, String noise) {
+	
+	public Bear(String name, String noise) {
 		super(name);
-		this.noise = noise;
+		this.noise = noise; 
 	}
 	
 	
@@ -24,5 +25,4 @@ public class Tiger extends Animal {
 		System.out.println(noise);
 	}
 	
-
 }

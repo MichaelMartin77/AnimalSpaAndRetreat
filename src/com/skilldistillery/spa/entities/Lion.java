@@ -1,28 +1,26 @@
 package com.skilldistillery.spa.entities;
 
-public class Tiger extends Animal {
-	private String noise = "Chuffffff";
+public class Lion extends Animal {
+	private String noise = "ROARRR";
 
 	// methods
 
-	public Tiger() {
+	public Lion() {
+
 	}
 
-	public Tiger(String name) {
+	public Lion(String name) {
 		super(name);
 	}
 
-	public Tiger(String name, String noise) {
+	public Lion(String name, String noise) {
 		super(name);
 		this.noise = noise;
 	}
-	
-	
+
 	@Override
 	public void makeNoise() {
 		super.makeNoise(); // parent make noise
 		System.out.println(noise);
 	}
-	
-
 }

@@ -15,8 +15,8 @@ public abstract class Animal {
 		System.out.println("Don't bother me I am eating " + quantity + " lbs of of meat");
 	} 
 
-	public void MakeNoise() {
-		System.out.println("I like to howl");
+	public void makeNoise() {
+		System.out.println("I am an animal, growling with delight");
 	}
 
 	public String getName() {
