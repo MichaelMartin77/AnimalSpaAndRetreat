@@ -21,20 +21,22 @@ public class AnimalRetreatApp {
 		
 //		Tiger tiger = new Tiger("Willie");
 //		System.out.println(tiger.getName());
-//		
+//		tiger.eat(43);
 //		Tiger tiger2 = new Tiger();
 //		System.out.println();
 		
-//		Lion lion = new Lion("Bryce"); 
-//		System.out.println(lion.getName());
-//		
-//		lion.makeNoise();
-//		
+		Lion lion = new Lion("Bryce"); 
+		System.out.println(lion.getName());
 		
-		Bear bear = new Bear("Terry"); 
-		System.out.println(bear.getName());
+		lion.makeNoise();
+		lion.eat(45);
+
 		
-		bear.makeNoise();
+//		Bear bear = new Bear("Terry"); 
+//		System.out.println(bear.getName());
+//		
+//		bear.makeNoise();
+//		bear.eat(43);
 	}
 	
 

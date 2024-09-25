@@ -5,6 +5,24 @@ public class Bear extends Animal {
 
 	// methods
 
+	@Override
+	public void eat(int quantity) {
+		System.out.println("Grrrr I love all " + quantity + " lbs of of fish I've collected for the cubs this season.");
+	} 
+	
+	@Override
+	public void makeNoise() {
+		super.makeNoise(); // parent make noise
+		System.out.println(noise);
+	}
+
+	@Override
+	public String toString() {
+		return "Bear [noise=" + noise + "]";
+	}
+	
+	
+	// no arg constructor 
 	public Bear() {
 
 	}
@@ -16,13 +34,6 @@ public class Bear extends Animal {
 	public Bear(String name, String noise) {
 		super(name);
 		this.noise = noise; 
-	}
-	
-	
-	@Override
-	public void makeNoise() {
-		super.makeNoise(); // parent make noise
-		System.out.println(noise);
 	}
 	
 }

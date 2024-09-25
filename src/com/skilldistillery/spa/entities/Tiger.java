@@ -4,6 +4,11 @@ public class Tiger extends Animal {
 	private String noise = "Chuffffff";
 
 	// methods
+	
+	@Override
+	public void eat(int quantity) {
+		System.out.println("I couldn't be more excited to eat every " + quantity + " lbs of wild boar I caught!");
+	} 
 
 	public Tiger() {
 	}
