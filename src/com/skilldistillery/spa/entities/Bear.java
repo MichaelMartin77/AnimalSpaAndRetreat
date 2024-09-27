@@ -8,7 +8,7 @@ public class Bear extends Animal {
 	@Override
 	public void eat(int quantity) {
 		super.eat(quantity);
-		System.out.println("Grrrr I love all " + quantity + " lbs of of fish I've collected for the cubs this season.");
+		System.out.println("Grrrr I love all " + quantity + " lbs of of fish I've they feed at this retreat. I wish they had some honey.");
 	} 
 	
 	@Override

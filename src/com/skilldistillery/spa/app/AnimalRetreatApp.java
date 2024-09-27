@@ -40,44 +40,24 @@ public class AnimalRetreatApp {
 //		bear.eat(43);
 
 		// testing makerounds()
-
-
-		Attendant att = new Attendant("Attendant Tommy");
-
-		// testing AnimalRetreat.java class 
-		Animal[] animalArr = new Animal[10];
-		
 		
 		
 		retreat.addAnimal(new Lion("Will"));
 		retreat.addAnimal(new Tiger("Bryce"));
-		retreat.addAnimal(new Bear("Terry"));
-		retreat.addAnimal(new Bear("Terry"));
-		retreat.addAnimal(new Bear("Terry"));
-		retreat.addAnimal(new Bear("Terry"));
-		retreat.addAnimal(new Bear("Terry"));
-		retreat.addAnimal(new Bear("Terry"));
-		retreat.addAnimal(new Bear("Terry"));
-		retreat.addAnimal(new Bear("Terry"));
-		retreat.addAnimal(new Bear("Terry"));
-		retreat.addAnimal(new Bear("Terry"));
-		retreat.addAnimal(new Bear("Terry"));
-		retreat.addAnimal(new Bear("Terry"));
-		retreat.addAnimal(new Bear("Terry"));
-		retreat.addAnimal(new Bear("Terry"));
-		retreat.addAnimal(new Bear("Terry"));
-	
+		retreat.addAnimal(new Tiger("Toby"));
+		retreat.addAnimal(new Tiger("Ronnie"));
+		retreat.addAnimal(new Tiger("Parker"));
+		
 
 	
 		
-		for (int i = 0; i < animalArr.length; i++ ) {
-			retreat.addAnimal(animalArr[i]);
-		}
 
 		retreat.listAnimals();
 		
 		
 		retreat.startAttendantRounds();
+		
+		
 		
 		
 

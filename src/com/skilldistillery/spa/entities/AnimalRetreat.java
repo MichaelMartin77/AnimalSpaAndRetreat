@@ -12,10 +12,10 @@ public class AnimalRetreat {
 	public void listAnimals() {
 
 		for (int i = 0; i < rooms.length; i++) {
-			if (rooms == null) {
+			if (rooms[i] == null) {
 				System.out.println("This room is empty :(");
 			} else {
-				System.out.println("Room:  " + rooms[i].getName());
+				System.out.println("Room " + i + ":  " + rooms[i].getName());
 			}
 
 		}
@@ -27,17 +27,16 @@ public class AnimalRetreat {
 		for (int i = 0; i < rooms.length; i++) {
 			if (rooms[i] == null) {
 				rooms[i] = newAnimal;
-				System.out.println("Hey! " + newAnimal.getName() + " make yourself at home");
+				System.out.println("Welcome " + newAnimal.getName() + ", make yourself at home");
 				return true;
 			}
 
 		}
-		
+
 		System.out.println("No room at the retreat and spa, try again tomorrow.");
 		return false;
 	}
-	
-	
+
 	public void startAttendantRounds() {
 		attendant.makeRounds(rooms);
 	}
