@@ -9,18 +9,19 @@ public class Attendant {
 		this.name = name;
 	}
 
-	public void makeRounds(Animal animal[]) {
+	public void makeRounds(Animal[] animals) {
 		Random rand = new Random();
 		int min = 5;
 		int max = 50;
 
-		for (Animal animals : animal) {
-			if (animals != null) {
-				System.out.println("I will feed " + animals.getName());
-				animals.eat(rand.nextInt(max - min + 1) + min);
-			}
+		for (Animal animal : animals) {
 
-			if (animals == null) {
+			if (animal != null) {
+
+				System.out.println("I will feed " + animal.getName());
+				// generated random number so that eat method doesn't have same number every time 
+				animal.eat(rand.nextInt(max - min + 1) + min);
+			} else {
 
 				System.out.println("The room is empty, please visit the next room");
 			}

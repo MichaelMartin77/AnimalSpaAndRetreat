@@ -7,6 +7,7 @@ public class Tiger extends Animal {
 	
 	@Override
 	public void eat(int quantity) {
+		super.eat(quantity);
 		System.out.println("I couldn't be more excited to eat every " + quantity + " lbs of wild boar I caught!");
 	} 
 	

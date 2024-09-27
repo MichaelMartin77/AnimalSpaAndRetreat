@@ -19,7 +19,7 @@ public class AnimalRetreatApp {
 	}
 
 	public void run() {
-//		AnimalRetreat retreat = new AnimalRetreat("Fred");
+		AnimalRetreat retreat = new AnimalRetreat("Fred");
 
 //		Tiger tiger = new Tiger("Willie");
 //		System.out.println(tiger.getName());
@@ -44,12 +44,40 @@ public class AnimalRetreatApp {
 
 		Attendant att = new Attendant("Attendant Tommy");
 
-		Animal[] animalArr = new Animal[3];
-		animalArr[0] = new Lion("Will");
-		animalArr[2] = new Tiger("Bryce");
-//		animalArr[2] = new Bear("Terry");
+		// testing AnimalRetreat.java class 
+		Animal[] animalArr = new Animal[10];
+		
+		
+		
+		retreat.addAnimal(new Lion("Will"));
+		retreat.addAnimal(new Tiger("Bryce"));
+		retreat.addAnimal(new Bear("Terry"));
+		retreat.addAnimal(new Bear("Terry"));
+		retreat.addAnimal(new Bear("Terry"));
+		retreat.addAnimal(new Bear("Terry"));
+		retreat.addAnimal(new Bear("Terry"));
+		retreat.addAnimal(new Bear("Terry"));
+		retreat.addAnimal(new Bear("Terry"));
+		retreat.addAnimal(new Bear("Terry"));
+		retreat.addAnimal(new Bear("Terry"));
+		retreat.addAnimal(new Bear("Terry"));
+		retreat.addAnimal(new Bear("Terry"));
+		retreat.addAnimal(new Bear("Terry"));
+		retreat.addAnimal(new Bear("Terry"));
+		retreat.addAnimal(new Bear("Terry"));
+		retreat.addAnimal(new Bear("Terry"));
+	
 
-		att.makeRounds(animalArr);
+	
+		
+		for (int i = 0; i < animalArr.length; i++ ) {
+			retreat.addAnimal(animalArr[i]);
+		}
+
+		retreat.listAnimals();
+		
+		
+		retreat.startAttendantRounds();
 		
 		
 
