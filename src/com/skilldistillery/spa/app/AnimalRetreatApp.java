@@ -1,5 +1,7 @@
 package com.skilldistillery.spa.app;
 
+import java.util.Scanner;
+
 import com.skilldistillery.spa.entities.Animal;
 import com.skilldistillery.spa.entities.AnimalRetreat;
 import com.skilldistillery.spa.entities.Attendant;
@@ -20,46 +22,37 @@ public class AnimalRetreatApp {
 
 	public void run() {
 		AnimalRetreat retreat = new AnimalRetreat("Fred");
+		Scanner scanner = new Scanner(System.in);
 
-//		Tiger tiger = new Tiger("Willie");
-//		System.out.println(tiger.getName());
-//		tiger.eat(43);
-//		Tiger tiger2 = new Tiger();
-//		System.out.println();
+		System.out.print(
+				"We're excited to announce the COMPLETION of building out our NEW Animal Retreat and Spa Resort.\n");
+		System.out.println("We welcome our non-human guests, and invite them all to luxuriate in delight!");
 
-//		Lion lion = new Lion("Bryce"); 
-//		System.out.println(lion.getName());
-//		
-//		lion.makeNoise();
-//		lion.eat(45);
+		boolean keepRunning = true;
+		while (keepRunning) {
+			System.out.println("Please select an option (1-4) from the menu below: ");
+			System.out.println("1: List all animals");
+			System.out.println("2: Add an animals");
+			System.out.println("3: Start attendant rounds");
+			System.out.println("4: Close the inn for the night");
 
-//		Bear bear = new Bear("Terry"); 
-//		System.out.println(bear.getName());
-//		
-//		bear.makeNoise();
-//		bear.eat(43);
+			int choice = scanner.nextInt();
 
-		// testing makerounds()
-		
-		
-		retreat.addAnimal(new Lion("Will"));
-		retreat.addAnimal(new Tiger("Bryce"));
-		retreat.addAnimal(new Tiger("Toby"));
-		retreat.addAnimal(new Tiger("Ronnie"));
-		retreat.addAnimal(new Tiger("Parker"));
-		
+			switch (choice) {
+			case 1:
+				retreat.listAnimals();
+				break;
+			case 2:
+				retreat.addAnimal(new Lion());
+				System.out.println("You've chosen to add a new animal. What kind of animal do you want to add? (1-3)");
+				System.out.println("1. Lion");
+				System.out.println("2. Tiger");
+				System.out.println("3. Bear");
 
-	
-		
 
-		retreat.listAnimals();
-		
-		
-		retreat.startAttendantRounds();
-		
-		
-		
-		
+			}
+
+		}
 
 	}
 
