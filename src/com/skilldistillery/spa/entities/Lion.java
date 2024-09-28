@@ -15,6 +15,7 @@ public class Lion extends Animal {
 	public void eat(int quantity) {
 		super.eat(quantity);
 		System.out.println("Yummmm I'm eating " + quantity + " lbs of of buffalo meat. What an awesome spa. ");
+		System.out.println();
 	} 
 
 	//no arg constructor 

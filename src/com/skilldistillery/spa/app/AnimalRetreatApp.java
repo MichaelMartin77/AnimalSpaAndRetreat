@@ -30,6 +30,7 @@ public class AnimalRetreatApp {
 
 		boolean keepRunning = true;
 		while (keepRunning) {
+			System.out.println();
 			System.out.println("Please select an option (1-4) from the menu below: ");
 			System.out.println("1: List all animals");
 			System.out.println("2: Add an animals");
@@ -43,13 +44,41 @@ public class AnimalRetreatApp {
 				retreat.listAnimals();
 				break;
 			case 2:
-				retreat.addAnimal(new Lion());
 				System.out.println("You've chosen to add a new animal. What kind of animal do you want to add? (1-3)");
 				System.out.println("1. Lion");
 				System.out.println("2. Tiger");
 				System.out.println("3. Bear");
 
+				int animalType = scanner.nextInt();
 
+				Animal newAnimal = null;
+
+				if (animalType == 1) {
+					newAnimal = new Lion();
+				} else if ((animalType == 2)) {
+					newAnimal = new Bear();
+				} else if ((animalType == 3)) {
+					newAnimal = new Tiger();
+				} else {
+					System.out.println("Invalid animal");
+				}
+
+				if (newAnimal != null) {
+					System.out.println("Next, what is their name? ");
+					String animalName = scanner.next();
+					newAnimal.setName(animalName);
+					retreat.addAnimal(newAnimal);
+				}
+
+				break;
+			case 3:
+				System.out.println("Starting my rounds...");
+				retreat.startAttendantRounds();
+				break;
+			case 4:
+				System.out.println("Buhhh Byeee see you later");
+				keepRunning = false;
+				break;
 			}
 
 		}

@@ -12,7 +12,7 @@ public abstract class Animal {
 	}
 
 	public void eat(int quantity) {
-		System.out.println("Don't bother me I am eating " + quantity + " lbs of of meat");
+		System.out.println("Don't bother me I am eating " + quantity + " lbs of meat");
 	} 
 
 	public void makeNoise() {
