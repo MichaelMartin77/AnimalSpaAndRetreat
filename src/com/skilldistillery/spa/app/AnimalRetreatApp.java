@@ -17,6 +17,8 @@ public class AnimalRetreatApp {
 		AnimalRetreatApp app = new AnimalRetreatApp();
 
 		app.run();
+		
+	
 
 	}
 
@@ -65,7 +67,7 @@ public class AnimalRetreatApp {
 
 				if (newAnimal != null) {
 					System.out.println("Next, what is their name? ");
-					String animalName = scanner.next();
+					String animalName = scanner.nextLine();
 					newAnimal.setName(animalName);
 					retreat.addAnimal(newAnimal);
 				}

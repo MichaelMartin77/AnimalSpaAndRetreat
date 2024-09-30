@@ -1,7 +1,5 @@
 # AnimalSpaAndRetreat
 
-# CarDealershipApp
-
 ### Description 
 This is a simple Java console application that simulates the operations of an animal spa and retreat. The retreat manages a group of animals, allowing an attendant to care for them by making rounds and feeding the animals. The project demonstrates basic object-oriented programming principles such as encapsulation, method interaction, and data management across classes.
 
