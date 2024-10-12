@@ -52,6 +52,7 @@ public class AnimalRetreatApp {
 				System.out.println("3. Bear");
 
 				int animalType = scanner.nextInt();
+				scanner.nextLine();
 
 				Animal newAnimal = null;
 

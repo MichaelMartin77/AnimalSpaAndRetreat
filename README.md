@@ -7,7 +7,7 @@ Key features include:
 
 - Adding animals to the retreat: Users can add animals to the retreat, up to a set maximum capacity.
 
-- Viewing the animal list: Users can view a list of animals currently staying at the retreat.
+- Viewing the animal list: Users can view a list of animals currently staying at the retreat
 
 - Attendant rounds: An attendant can make rounds to check on the animals and feed those that are hungry.
 
