@@ -1,5 +1,6 @@
 package com.skilldistillery.spa.app;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import com.skilldistillery.spa.entities.Animal;
@@ -50,28 +51,39 @@ public class AnimalRetreatApp {
 				System.out.println("1. Lion");
 				System.out.println("2. Tiger");
 				System.out.println("3. Bear");
+				
+				
 
-				int animalType = scanner.nextInt();
-				scanner.nextLine();
-
+				
+				
 				Animal newAnimal = null;
+				
+				try {
+					int animalType = scanner.nextInt();
+					scanner.nextLine();
+					
+					
+					if (animalType == 1) {
+						newAnimal = new Lion();
+					} else if ((animalType == 2)) {
+						newAnimal = new Bear();
+					} else if ((animalType == 3)) {
+						newAnimal = new Tiger();
+					} else {
+						System.out.println("Invalid animal");
+					}
 
-				if (animalType == 1) {
-					newAnimal = new Lion();
-				} else if ((animalType == 2)) {
-					newAnimal = new Bear();
-				} else if ((animalType == 3)) {
-					newAnimal = new Tiger();
-				} else {
-					System.out.println("Invalid animal");
-				}
-
-				if (newAnimal != null) {
-					System.out.println("Next, what is their name? ");
-					String animalName = scanner.nextLine();
-					newAnimal.setName(animalName);
-					retreat.addAnimal(newAnimal);
-				}
+					if (newAnimal != null) {
+						System.out.println("Next, what is their name? ");
+						String animalName = scanner.nextLine();
+						newAnimal.setName(animalName);
+						retreat.addAnimal(newAnimal);
+					}
+			      }
+			      catch (InputMismatchException e) {
+			        System.out.println("Invalid input.\n");
+			        scanner.nextLine();       // Clear input buffer for next attempt
+			      }
 
 				break;
 			case 3:
